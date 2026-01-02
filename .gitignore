@@ -1,0 +1,7 @@
+.plant-env/
+__pycache__/
+.ipynb_checkpoints/
+data/raw/
+*.h5
+*.keras
+.env
