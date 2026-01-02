@@ -1,5 +1,8 @@
-tensorflow==2.15.0
+fastapi
+uvicorn
+tensorflow>=2.20.0
 numpy
-streamlit
-pillow
 requests
+streamlit
+matplotlib
+pillow
