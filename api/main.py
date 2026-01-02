@@ -39,3 +39,9 @@ async def predict(file: UploadFile = File(...)):
     class_idx = int(np.argmax(preds))
 
     return {"prediction": classes[class_idx]}
+
+# Point d'entrée
+if __name__ == "__main__":
+    import uvicorn
+    port = int(os.environ.get["PORT", 8000])
+    uvicorn.run(app, host="0.0.0.0", port=port)
